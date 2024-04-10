@@ -8,22 +8,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript">
-        function LinkClick(e) {
-            var link = jQuery(this);
-            console.log('link:%o', link);
-            var iframe = document.getElementById('id_iframe_main');
-            console.log('iframe:%o', iframe);
-            iframe.src = link.src;
-        }
-        var listLink = document.getElementsByTagName('a');
-        for (var link of listLink) {
-            link.addEventListener('click', LinkClick);
-            console.log('link:%o', link);
-        }
-
-    </script>
-
+    <script type="text/javascript" src="./js/main.js"></script>
 </head>
 
 <body>

@@ -6,6 +6,21 @@
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        function LinkClick(e){
+            var link =jQuery(this);
+            console.log('link:%o',link);
+            var iframe=document.getElementById('id_iframe_main');
+            console.log('iframe:%o',iframe);
+            iframe.src =link.src;
+        }
+        var listLink =document.getElementsByTagName('a');
+        for(var link of listLink){
+            link.addEventListener('click', LinkClick);
+        }
+
+    </script>
     <header>
         <div>
             <ul>
@@ -53,9 +68,7 @@
             </ul>
         </div>
     </header>
-    <iframe src="./menu.html"></iframe>
-    <iframe src="./main.html"></iframe>
-
+    <iframe id="id_iframe_main" src="./main.html"></iframe>
     <footer>
         <!-- ↓ は広告なので 削除したい人は削除して使って下さい -->
         <amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8848137110933190"

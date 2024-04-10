@@ -2,30 +2,31 @@
 <html lang="ja">
 
 <head>
-<!-- 
+    <!-- 
     <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 -->
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-</head>
-
-<body>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript">
-        function LinkClick(e){
-            var link =jQuery(this);
-            console.log('link:%o',link);
-            var iframe=document.getElementById('id_iframe_main');
-            console.log('iframe:%o',iframe);
-            iframe.src =link.src;
+        function LinkClick(e) {
+            var link = jQuery(this);
+            console.log('link:%o', link);
+            var iframe = document.getElementById('id_iframe_main');
+            console.log('iframe:%o', iframe);
+            iframe.src = link.src;
         }
-        var listLink =document.getElementsByTagName('a');
-        for(var link of listLink){
+        var listLink = document.getElementsByTagName('a');
+        for (var link of listLink) {
             link.addEventListener('click', LinkClick);
-            console.log('link:%o',link);
+            console.log('link:%o', link);
         }
 
     </script>
+
+</head>
+
+<body>
     <header>
         <div>
             <ul>

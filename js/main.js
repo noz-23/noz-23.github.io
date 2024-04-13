@@ -9,6 +9,8 @@ jQuery.noConflict();
         var iframe = document.getElementById('id_iframe_main');
         console.log('iframe:%o', iframe);
         iframe.src = link.src;
+        // false 返しで元の動作をキャンセル
+        return false;
     }
     var listLink = document.getElementsByTagName('a');
     console.log('listLink:%o', listLink);

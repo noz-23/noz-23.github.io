@@ -6,6 +6,7 @@ function LinkClick(e) {
     iframe.src = link.src;
 }
 var listLink = document.getElementsByTagName('a');
+console.log('listLink:%o', listLink);
 for (var link of listLink) {
     link.addEventListener('click', LinkClick);
     console.log('link:%o', link);

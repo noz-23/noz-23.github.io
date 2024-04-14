@@ -1,9 +1,8 @@
 jQuery.noConflict();
 
-
 (async () => {
     'use strict';
-    function LinkClick(e) {
+    function LinkClick() {
         var link = jQuery(this);
         console.log('link:%o', link);
         var iframe = document.getElementById('id_iframe_main');
@@ -15,7 +14,7 @@ jQuery.noConflict();
     var listLink = document.getElementsByTagName('a');
     console.log('listLink:%o', listLink);
     for (var link of listLink) {
-        link.addEventListener('click', LinkClick);
         console.log('link:%o', link);
+        link.addEventListener('click', LinkClick);
     }
 })();

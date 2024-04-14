@@ -17,4 +17,5 @@ jQuery.noConflict();
         console.log('link:%o', link);
         link.addEventListener('click', LinkClick);
     }
+    console.log('listLink.length:%o', listLink.length);
 })();

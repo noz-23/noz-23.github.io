@@ -13,14 +13,15 @@ jQuery.noConflict();
     }
     var listLink = document.getElementsByTagName('a');
     console.log('listLink:%o', listLink);
-    //for (var l of listLink) {
-    //    console.log('link:%o', l);
-    //    l.addEventListener('click', LinkClick);
-    //}
-    listLink.forEach(element => {
-        console.log('element:%o', element);
-        element.addEventListener('click', LinkClick);
-    });
+    var arryLink =Array.from(listLink)
+    for (var l of arryLink) {
+        console.log('link:%o', l);
+        l.addEventListener('click', LinkClick);
+    }
+    //listLink.forEach(element => {
+    //    console.log('element:%o', element);
+    //    element.addEventListener('click', LinkClick);
+    //});
 
     console.log('listLink.length:%o', listLink.length);
 })();

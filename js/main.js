@@ -13,12 +13,17 @@ jQuery.noConflict();
     }
     var listLink = document.getElementsByTagName('a');
     console.log('listLink:%o', listLink);
-    //var arryLink =[...listLink];
-    var arryLink =Array.from(listLink);
-    console.log('arryLink:%o', arryLink);
-    for (var l of arryLink) {
+    ////var arryLink =[...listLink];
+    //var arryLink =Array.from(listLink);
+    //console.log('arryLink:%o', arryLink);
+    //for (var l of arryLink) {
+    //    console.log('link:%o', l);
+    //    l.addEventListener('click', LinkClick);
+    //}
+    for(var i =0; i<listLink.length;i++){
+        var l=listLink[i];
         console.log('link:%o', l);
-        l.addEventListener('click', LinkClick);
+        l.addEventListener('click', LinkClick);    
     }
     //listLink.forEach(element => {
     //    console.log('element:%o', element);

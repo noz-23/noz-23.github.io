@@ -22,7 +22,7 @@ jQuery.noConflict();
     //    l.addEventListener('click', LinkClick);
     //}
     for(var i =0; i<listLink.length;i++){
-        var l=listLink.[i];
+        var l=listLink[i];
         console.log('link:%o', l);
         l.addEventListener('click', LinkClick);    
     }

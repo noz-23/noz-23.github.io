@@ -13,15 +13,16 @@ jQuery.noConflict();
     }
     var listLink = document.getElementsByTagName('a');
     console.log('listLink:%o', listLink);
-    ////var arryLink =[...listLink];
+    console.log('listLink.length:%o', listLink.length);
+    var arryLink =[...listLink.HTMLCollection];
     //var arryLink =Array.from(listLink);
-    //console.log('arryLink:%o', arryLink);
+    console.log('arryLink:%o', arryLink);
     //for (var l of arryLink) {
     //    console.log('link:%o', l);
     //    l.addEventListener('click', LinkClick);
     //}
-    for(var i =0; i<listLink.HTMLCollection.length;i++){
-        var l=listLink.HTMLCollection[i];
+    for(var i =0; i<listLink.length;i++){
+        var l=listLink.[i];
         console.log('link:%o', l);
         l.addEventListener('click', LinkClick);    
     }
@@ -30,5 +31,4 @@ jQuery.noConflict();
     //    element.addEventListener('click', LinkClick);
     //});
 
-    console.log('listLink.length:%o', listLink.length);
 })();

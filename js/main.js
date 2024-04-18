@@ -13,7 +13,7 @@ jQuery.noConflict();
     }
     var listLink = document.getElementsByTagName('a');
     console.log('listLink:%o', listLink);
-    var arryLink =Array.from(listLink)
+    var arryLink =[...listLink]
     console.log('arryLink:%o', arryLink);
     for (var l of arryLink) {
         console.log('link:%o', l);

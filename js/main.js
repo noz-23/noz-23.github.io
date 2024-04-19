@@ -4,7 +4,7 @@ jQuery.noConflict();
 window.addEventListener('DOMContentLoaded', async() => {
     'use strict';
     function LinkClick() {
-        console.log('this:%o', link);
+        console.log('this:%o', this);
         var link = jQuery(this);
         console.log('link:%o', link);
         var iframe = document.getElementById('id_iframe_main');

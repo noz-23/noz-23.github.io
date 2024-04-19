@@ -1,6 +1,7 @@
 jQuery.noConflict();
 
-(async () => {
+// ページのロードが終わってから実行しないlistLinkなどの配列が上手く入らない
+window.addEventListener('DOMContentLoaded', async() => {
     'use strict';
     function LinkClick() {
         var link = jQuery(this);
@@ -15,20 +16,20 @@ jQuery.noConflict();
     console.log('listLink:%o', listLink);
     console.log('listLink.length:%o', listLink.length);
     //var arryLink =[...listLink.HTMLCollection];
-    //var arryLink =Array.from(listLink);
-    //console.log('arryLink:%o', arryLink);
-    //for (var l of arryLink) {
-    //    console.log('link:%o', l);
-    //    l.addEventListener('click', LinkClick);
-    //}
-    for(var i =0; i<listLink.length;i++){
-        var l=listLink[i];
+    var arryLink =Array.from(listLink);
+    console.log('arryLink:%o', arryLink);
+    for (var l of arryLink) {
         console.log('link:%o', l);
-        l.addEventListener('click', LinkClick);    
+        l.addEventListener('click', LinkClick);
     }
+    //for(var i =0; i<listLink.length;i++){
+    //    var l=listLink[i];
+    //    console.log('link:%o', l);
+    //    l.addEventListener('click', LinkClick);    
+    //}
     //listLink.forEach(element => {
     //    console.log('element:%o', element);
     //    element.addEventListener('click', LinkClick);
     //});
 
-})();
+});

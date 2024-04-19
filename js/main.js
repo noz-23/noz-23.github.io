@@ -4,11 +4,12 @@ jQuery.noConflict();
 window.addEventListener('DOMContentLoaded', async() => {
     'use strict';
     function LinkClick() {
+        console.log('this:%o', link);
         var link = jQuery(this);
         console.log('link:%o', link);
         var iframe = document.getElementById('id_iframe_main');
         console.log('iframe:%o', iframe);
-        iframe.src = link.src;
+        iframe.src = link.eq(0).src;
         // false 返しで元の動作をキャンセル
         return false;
     }

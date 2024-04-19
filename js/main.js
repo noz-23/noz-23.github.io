@@ -13,8 +13,8 @@ window.addEventListener('DOMContentLoaded', async() => {
         return false;
     }
     var listLink = document.getElementsByTagName('a');
-    console.log('listLink:%o', listLink);
-    console.log('listLink.length:%o', listLink.length);
+    //console.log('listLink:%o', listLink);
+    //console.log('listLink.length:%o', listLink.length);
     //var arryLink =[...listLink.HTMLCollection];
     var arryLink =Array.from(listLink);
     console.log('arryLink:%o', arryLink);

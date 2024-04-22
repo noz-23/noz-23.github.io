@@ -1,3 +1,7 @@
+div.id_header_menu{
+    background-color:lightgreen
+}
+
 header{
     display:flex;
 }
@@ -13,3 +17,11 @@ iframe{
 
     border: none;
 }
+
+ul{
+    list-style-type: none;
+}
+div.id_footer_menu{
+    background-color:lightgreen
+}
+

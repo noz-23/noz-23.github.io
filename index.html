@@ -16,7 +16,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style id="wp-block-site-logo-inline-css">.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}.wp-block-site-logo.is-style-rounded{border-radius:9999px}</style>
 <style id="wp-block-site-title-inline-css">.wp-block-site-title a{color:inherit}</style>
 <style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}</style>
-<style id="wp-block-page-list-inline-css">.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}</style>
+<style id="wp-block-navigation-link-inline-css">.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}.components-popover-pointer-events-trap{background-color:initial;cursor:pointer;inset:0;position:fixed;z-index:1000000}
+
+				.is-style-arrow-link .wp-block-navigation-item__label:after {
+					content: "\2197";
+					padding-inline-start: 0.25rem;
+					vertical-align: middle;
+					text-decoration: none;
+					display: inline-block;
+				}</style>
 <link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.5.3" media="all">
 <style id="wp-block-heading-inline-css">h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
 
@@ -86,7 +94,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 .wp-block-site-title a:where(:not(.wp-element-button)){text-decoration: none;}
 .wp-block-site-title a:where(:not(.wp-element-button)):hover{text-decoration: none;}
 :where(.wp-site-blocks *:focus){outline-width:2px;outline-style:solid}.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th{background-color:var(--wp--preset--color--contrast-2);color:var(--wp--preset--color--base);border-color:var(--wp--preset--color--contrast-2)}.wp-block-calendar table:where(:not(.has-text-color)) td{border-color:var(--wp--preset--color--contrast-2)}.wp-block-categories{}.wp-block-categories{list-style-type:none;}.wp-block-categories li{margin-bottom: 0.5rem;}.wp-block-post-comments-form{}.wp-block-post-comments-form textarea, .wp-block-post-comments-form input{border-radius:.33rem}.wp-block-loginout{}.wp-block-loginout input{border-radius:.33rem;padding:calc(0.667em + 2px);border:1px solid #949494;}.wp-block-post-terms{}.wp-block-post-terms .wp-block-post-terms__prefix{color: var(--wp--preset--color--contrast-2);}.wp-block-query-title{}.wp-block-query-title span{font-style: italic;}.wp-block-quote{}.wp-block-quote :where(p){margin-block-start:0;margin-block-end:calc(var(--wp--preset--spacing--10) + 0.5rem);}.wp-block-quote :where(:last-child){margin-block-end:0;}.wp-block-quote.has-text-align-right.is-style-plain, .rtl .is-style-plain.wp-block-quote:not(.has-text-align-center):not(.has-text-align-left){border-width: 0 2px 0 0;padding-left:calc(var(--wp--preset--spacing--20) + 0.5rem);padding-right:calc(var(--wp--preset--spacing--20) + 0.5rem);}.wp-block-quote.has-text-align-left.is-style-plain, body:not(.rtl) .is-style-plain.wp-block-quote:not(.has-text-align-center):not(.has-text-align-right){border-width: 0 0 0 2px;padding-left:calc(var(--wp--preset--spacing--20) + 0.5rem);padding-right:calc(var(--wp--preset--spacing--20) + 0.5rem)}.wp-block-search{}.wp-block-search .wp-block-search__input{border-radius:.33rem}.wp-block-separator{}.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull){width: var(--wp--preset--spacing--60)}</style>
-<style id="core-block-supports-inline-css">.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-2.wp-container-core-group-is-layout-2{gap:var(--wp--preset--spacing--20);}.wp-container-core-navigation-is-layout-1.wp-container-core-navigation-is-layout-1{gap:var(--wp--preset--spacing--20);justify-content:flex-end;}.wp-container-core-group-is-layout-3.wp-container-core-group-is-layout-3{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-4.wp-container-core-group-is-layout-4{justify-content:space-between;}.wp-container-content-2{flex-basis:min(2.5rem, 3vw);}.wp-container-core-buttons-is-layout-2.wp-container-core-buttons-is-layout-2{justify-content:center;}.wp-container-core-group-is-layout-6.wp-container-core-group-is-layout-6{flex-wrap:nowrap;justify-content:center;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:565px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > .alignwide{max-width:565px;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 .alignfull{max-width:none;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-block-gallery.wp-block-gallery-3{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-10.wp-container-core-group-is-layout-10{flex-direction:column;align-items:flex-start;}.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-elements-8bf22aea4580d9c976ba3ef5759dcdbc a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-2.wp-container-core-group-is-layout-2{gap:var(--wp--preset--spacing--20);}.wp-container-core-navigation-is-layout-1.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--20);flex-direction:column;align-items:flex-end;}.wp-container-core-group-is-layout-3.wp-container-core-group-is-layout-3{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-4.wp-container-core-group-is-layout-4{justify-content:space-between;}.wp-container-content-2{flex-basis:min(2.5rem, 3vw);}.wp-container-core-buttons-is-layout-2.wp-container-core-buttons-is-layout-2{justify-content:center;}.wp-container-core-group-is-layout-6.wp-container-core-group-is-layout-6{flex-wrap:nowrap;justify-content:center;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:565px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > .alignwide{max-width:565px;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 .alignfull{max-width:none;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-block-gallery.wp-block-gallery-3{--wp--style--unstable-gallery-gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );gap:var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) );}.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-content-4{flex-basis:20px;}.wp-container-core-group-is-layout-10.wp-container-core-group-is-layout-10{gap:0;flex-direction:column;align-items:flex-start;}.wp-container-core-column-is-layout-1.wp-container-core-column-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-1.wp-container-core-column-is-layout-1.wp-container-core-column-is-layout-1.wp-container-core-column-is-layout-1 > * + *{margin-block-start:var(--wp--preset--spacing--10);margin-block-end:0;}.wp-container-core-column-is-layout-2.wp-container-core-column-is-layout-2 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-2.wp-container-core-column-is-layout-2.wp-container-core-column-is-layout-2.wp-container-core-column-is-layout-2 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-3.wp-container-core-column-is-layout-3 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-3.wp-container-core-column-is-layout-3.wp-container-core-column-is-layout-3.wp-container-core-column-is-layout-3 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;gap:0 0;}.wp-elements-8bf22aea4580d9c976ba3ef5759dcdbc a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}</style>
 <style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
 			border: 0;
 			clip: rect(1px,1px,1px,1px);
@@ -129,7 +137,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style type="text/css">.broken_link, a.broken_link {
 	text-decoration: line-through;
 }</style>
-<style id="wp-fonts-local">@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+<!-- この URL で利用できる AMP HTML バージョンはありません。 --><style id="wp-fonts-local">@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2') format('woff2');}
 @font-face{font-family:Cardo;font-style:italic;font-weight:400;font-display:fallback;src:url('/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2') format('woff2');}
 @font-face{font-family:Cardo;font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_700.woff2') format('woff2');}</style>
@@ -140,6 +148,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </head>
 
 <body class="home blog wp-custom-logo wp-embed-responsive">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8848137110933190" crossorigin="anonymous"></script>
+<!-- KintoneDisplay -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8848137110933190" data-ad-slot="3643192887" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 <div class="wp-site-blocks">
 <header class="wp-block-template-part">
@@ -154,16 +166,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
-<div class="wp-block-group is-vertical is-content-justification-left is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex"><nav class="is-responsive items-justified-right wp-block-navigation is-horizontal is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex" aria-label="Navigation" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"メニュー"}'><button aria-haspopup="dialog" aria-label="メニューを開く" class="wp-block-navigation__responsive-container-open " data-wp-on--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
-				<div class="wp-block-navigation__responsive-container  " id="modal-1" data-wp-class--has-modal-open="state.isMenuOpen" data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--focusout="actions.handleMenuFocusout" tabindex="-1">
+<div class="wp-block-group is-vertical is-content-justification-left is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex"><nav class="is-responsive items-justified-right is-vertical no-wrap wp-block-navigation is-content-justification-right is-nowrap is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex" aria-label="Navigation" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"メニュー"}'><button aria-haspopup="dialog" aria-label="メニューを開く" class="wp-block-navigation__responsive-container-open always-shown" data-wp-on--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+				<div class="wp-block-navigation__responsive-container hidden-by-default " id="modal-1" data-wp-class--has-modal-open="state.isMenuOpen" data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--focusout="actions.handleMenuFocusout" tabindex="-1">
 					<div class="wp-block-navigation__responsive-close" tabindex="-1">
 						<div class="wp-block-navigation__responsive-dialog" data-wp-bind--aria-modal="state.ariaModal" data-wp-bind--aria-label="state.ariaLabel" data-wp-bind--role="state.roleAttribute">
 							<button aria-label="メニューを閉じる" class="wp-block-navigation__responsive-container-close" data-wp-on--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
 							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
-								<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation"><ul class="wp-block-page-list">
-<li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/main/">noz-23 oss 説明HP</a></li>
-<li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc/">プライバシーポリシー</a></li>
-</ul></ul>
+								<ul class="wp-block-navigation__container is-responsive items-justified-right is-vertical no-wrap wp-block-navigation">
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/main/"><span class="wp-block-navigation-item__label">noz-23 oss 説明</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/privacypolicy/"><span class="wp-block-navigation-item__label">プライバシーポリシー</span></a></li>
+</ul>
 							</div>
 						</div>
 					</div>
@@ -211,14 +223,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 <footer class="wp-block-template-part">
-<div class="wp-block-group has-accent-5-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-<h2 class="wp-block-heading has-body-font-family"><strong>To Github</strong></h2>
+<div class="wp-block-group has-accent-5-background-color has-background is-layout-flow wp-block-group-is-layout-flow" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20)">
+<h2 class="wp-block-heading has-text-align-center has-body-font-family"><strong>To Github And Test</strong></h2>
 
 
 
-<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:400px">
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-10 wp-block-group-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex" style="margin-top:0;margin-bottom:0;padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">
+<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-1 wp-block-column-is-layout-flow" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:200px">
+<div class="wp-block-group is-vertical is-content-justification-left is-layout-flex wp-container-core-group-is-layout-10 wp-block-group-is-layout-flex" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
 <h3 class="wp-block-heading has-body-font-family"><strong>Box</strong></h3>
 
 
@@ -228,6 +240,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 <p><a href="https://github.com/noz-23/KintoneBoxJwt">KintoneBoxJwt</a></p>
+
+
+
+<div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-4"></div>
 
 
 
@@ -241,7 +257,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:600px">
+<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-2 wp-block-column-is-layout-flow" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:300px">
 <h3 class="wp-block-heading has-body-font-family"><strong>Kintone Plugin</strong></h3>
 
 
@@ -255,6 +271,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 <p><a href="https://github.com/noz-23/KintoneClosingTime">KintoneClosingTime</a></p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
 
@@ -274,6 +294,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
+<p><a href="https://github.com/noz-23/KintoneJoinCharacter">KintoneJoinCharacter</a></p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
 <h4 class="wp-block-heading has-body-font-family"><strong>User(Organization)</strong></h4>
 
 
@@ -287,7 +315,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:400px">
+<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-3 wp-block-column-is-layout-flow" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:200px">
 <h3 class="wp-block-heading has-body-font-family"><strong>About Me</strong></h3>
 
 
